@@ -2,13 +2,20 @@
     Steven Tran, 2018
     navbar.js contains functions to support portfolio navigation
 */
+
+var navBuffer = $(".navbar").height();
+
 function sticky_relocate() {
     var window_top = $(window).scrollTop();
     var div_top = $('#sticky-anchor').offset().top;
-    if (window_top > div_top)
+    if (window_top > div_top){
         $('#nav').addClass('sticky');
-    else
+        navBuffer = $(".navbar").height();
+    }
+    else{
         $('#nav').removeClass('sticky');
+        navBuffer = 100;
+    }
 }
 
 $(function() {
@@ -22,7 +29,7 @@ $(function() {
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
                 $('html,body').animate({
-                    scrollTop: (target.offset().top - $(".navbar").height())
+                    scrollTop: (target.offset().top - navBuffer)
                 }, 1000);
                 return false;
             }
