@@ -1,0 +1,83 @@
+/*
+    Steven Tran, 2018
+    custom style.css for portfolio page
+*/
+
+html, body{
+    background-image: url("../images/background/concrete_seamless.png");
+    /*Default Properties of the webpage layout*/
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    z-index: 0;
+}
+
+#mainHeader{
+    background-color: #002d67;
+    border: 1px solid #cccccc;
+    padding: 10vh 3vh 3vh;
+    color: white;
+}
+
+#headerElements{
+    position: relative;
+}
+
+#bioImage{
+    border: 3px inset gold;
+    object-fit: cover;
+}
+
+#nameTag{
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+}
+
+#mainFooter{
+    background-color: #002d67;
+    color: #cccccc;
+    text-align: center;
+    padding: 1vh;
+    border: 1px solid #cccccc;
+    font-size: smaller;
+}
+
+#navbarElm{
+    text-align: center;
+}
+
+.mainContent{
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 25px;
+    margin: 2vh 0;
+    padding: 3vh;
+}
+
+.subHeaders{
+    padding: 1vh 0;
+    margin-bottom: 2vh;
+    border-bottom: 2px solid #002d67;
+}
+
+/*temp css
+*{
+    border: 2px solid red !important;
+}*/
+
+/*Mobile screen size*/
+@media only screen and (max-width: 768px){
+
+    #mainHeader{
+        padding: 5vh 0 0;
+    }
+    #headerElements{
+        justify-content: center;
+    }
+    #nameTag{
+        position: relative;
+        left: 0;
+        bottom: 0;
+        margin: 2vh 0;
+        text-align: center;
+    }
+}
