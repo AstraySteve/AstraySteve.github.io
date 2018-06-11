@@ -104,7 +104,9 @@ html, body{
 
 /*Mobile screen size*/
 @media only screen and (max-width: 768px){
-
+    p{
+        font-size: 3.5vmin;
+    }
     #mainHeader{
         padding: 5vh 0 0;
     }
