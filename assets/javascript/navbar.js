@@ -15,7 +15,6 @@ $(function() {
     //Calls to make navbar stick to top
     $(window).scroll(sticky_relocate);
     sticky_relocate();
-
     //Scrolls to selected nav item
     $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
@@ -23,7 +22,7 @@ $(function() {
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
                 $('html,body').animate({
-                    scrollTop: target.offset().top
+                    scrollTop: (target.offset().top - $(".navbar").height())
                 }, 1000);
                 return false;
             }
