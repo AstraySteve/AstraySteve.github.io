@@ -21,14 +21,14 @@ hr.light {
 }
 
 a {
-  color: #F05F40;
+  color: #5b86bf;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 a:hover {
-  color: #f05f40;
+  color: #858196;
 }
 
 .bg-primary {
@@ -161,7 +161,7 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/DeltaPlus_HUD.png");
+  background-image: url("../img/DeltaPlus_HUD.png"), url("../img/Space.png");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
